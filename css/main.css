@@ -1,0 +1,14 @@
+span.b {
+   display: block;
+   width: 15px;
+   height: 200px;
+   border: 1px solid blue;    
+   background-color: rgb(26, 26, 25); 
+ }
+ span.w {
+   display: block;
+   width: 15px;
+   height: 200px;
+   border: 1px solid blue;    
+   background-color: rgb(200, 200, 188); 
+ }
