@@ -68,28 +68,28 @@ function engineGame(options) {
 
             $('.b').css('display','block');
             $('.w').css('display','block');
-            
+
         }else if( parseFloat(engineStatus.score) > 0 ){
-            let hw = 200 + (engineStatus.score * 2);
+            let hw = 200 + (engineStatus.score * 4);
             $('.w').css('height',hw + 'px');
             console.log('if arriba'+hw);
 
             $('.b').css('display','block');
             $('.w').css('display','block');
 
-            let hb = 200 - (parseFloat(engineStatus.score) * 2);
+            let hb = 200 - (parseFloat(engineStatus.score) * 4);
             $('.b').css('height',hb + 'px');
             console.log(hb);
 
         }else if( engineStatus.score < 0 ){
-            let hw = 200 + parseFloat(parseFloat(engineStatus.score) * 2);
+            let hw = 200 + parseFloat(parseFloat(engineStatus.score) * 4);
             $('.w').css('height',hw + 'px');
 
           //  console.log(parseFloat(Math.abs(engineStatus.score)) * 2);
           $('.b').css('display','block');
           $('.w').css('display','block');
 
-            let hb = 200 + parseFloat(parseFloat(Math.abs(engineStatus.score)) * 2);
+            let hb = 200 + parseFloat(parseFloat(Math.abs(engineStatus.score)) * 4);
             $('.b').css('height',hb + 'px');
             console.log('if abajo black'+hb);
         }else if(engineStatus.score == 'Mate in -1' 
